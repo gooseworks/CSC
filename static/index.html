@@ -11,8 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="/css/normalize.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>        
+		<link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/main.css">
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -42,55 +42,61 @@
          				</div>
          			</div>
          			<ul id=nav class="clearfix">
-         				<li id="nhome"><a href="{site_url}">Home</a></li>
-         				<li id="naboutp"><a href="{path='about'}">About <span class="subnav">The Practice</span></a></li>
-         				<li id="nabout"><a href="{path='doctors'}">About <span class="subnav">The Doctors</span></a></li>
-         				<li id="nconditions"><a href="{path='conditions'}">Conditions</a></li>
-         				<li id="ntreatments"><a href="{path='treatments'}">Treatments</a></li>
-         				<li id="ncontact"><a href="{path='contact'}">Contact</a></li>
-         				<li id="nsearch"><a href="{path='search'}">Search</a></li>
+         				<li id="nhome"{if segment_1 == ''} class="sticky" {/if}><a href="{site_url}">Home</a></li>
+         				<li id="naboutp"{if segment_1 == 'about'} class="sticky" {/if}><a href="{path='about'}">About <span class="subnav">The Practice</span></a></li>
+         				<li id="nabout"{if segment_1 == 'doctors'} class="sticky" {/if}><a href="{path='doctors'}">About <span class="subnav">The Doctors</span></a></li>
+         				<li id="nconditions"{if segment_1 == 'conditions'} class="sticky" {/if}><a href="{path='conditions'}">Conditions</a></li>
+         				<li id="ntreatments"{if segment_1 == 'treatments'} class="sticky" {/if}><a href="{path='treatments'}">Treatments</a></li>
+         				<li id="ncontact"{if segment_1 == 'contact'} class="sticky" {/if}><a href="{path='contact'}">Contact</a></li>
+         				<li id="nsearch"{if segment_1 == 'search'} class="sticky" {/if}><a href="{path='search'}">Search</a></li>
          			</ul>
          		</div>
          	</div>
          </header>
-		<section class="slider">
+		<section class="slideshow">
 			<div class="wrap dblue">
 				<div class="inner">
-		        	<div class="slider-text">
-		          		<h1>Welcome to Foundation</h1>
-		          		<img src="" alt=""/>
+					<div class="slider">
+			        	<div class="slider-text">
+			          		<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis nisi auctor, elementum elit quis, rhoncus massa.</h2>
+			          	</div>
+		          		<img src="/img/home_video.jpg" alt="" width="100%"/>
 		        	</div>
 		        </div>
 		    </div>
 		</section>
-		<section class="callouts white">
+		<section class="callouts grey">
 			<div class="wrap">
-		  		<div class="inner clearfix">
-		  	    <div class="callout-panel centered-text">
-		  	      	<h2><a href="{path=''}">About <br /><span class="subtitle">The Doctors</span></a></h2>
-		  	      	<p>Learn about our team of skilled doctors.</p>     	  
-		  	    </div>
-		  	    <div class="callout-panel centered-text">
-		  	      	<h2><a href="{path=''}">Patient <br /><span class="subtitle">Testimonials</span></a></h2>
-		  	      	<p>See what our patients say about us.</p>     	  
-		  	    </div>
-		  	    <div class="callout-panel centered-text">
-		  	      	<h2><a href="{path=''}">Make an <br /><span class="subtitle">Appointment</span></a></h2>
-		  	      	<p>Contact us now to make an appointment.</p>     	  
-		  	    </div>
-			</div>
+		  		<div class="inner">
+			  		<div class="callouts-wrap clearfix">
+				  	    <div class="callout-panel centered-text">
+				  	      	<h2><a href="{path=''}">About <br /><span class="subtitle">The Doctors</span></a></h2>
+				  	      	<p>Learn about our team of skilled doctors.</p>     	  
+				  	    </div>
+				  	    <div class="callout-panel centered-text">
+				  	      	<h2><a href="{path=''}">Patient <br /><span class="subtitle">Testimonials</span></a></h2>
+				  	      	<p>See what our patients say about us.</p>     	  
+				  	    </div>
+				  	    <div class="callout-panel centered-text">
+				  	      	<h2><a href="{path=''}">Make an <br /><span class="subtitle">Appointment</span></a></h2>
+				  	      	<p>Contact us now to make an appointment.</p>     	  
+				  	    </div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<footer>
-			<div class="wrap">
-				<div class="logo-bar lblue clearfix">
-					<a href="http://" target="_blank"><img src="" alt="" /></a>
-					<a href="http://" target="_blank"><img src="" alt="" /></a>
-					<a href="http://" target="_blank"><img src="" alt="" /></a>
-					<a href="http://" target="_blank"><img src="" alt="" /></a>
-					<a href="http://" target="_blank"><img src="" alt="" /></a>
+			<div class="wrap lblue logo-bar-footer">
+				<div class="inner clearfix">
+					<a href="http://" target="_blank"><img src="/img/ms_logo.png" alt="" /></a>
+					<a href="http://" target="_blank"><img src="/img/vhs_logo.png" alt="" /></a>
+					<a href="http://www.hackensackumc.org/" target="_blank"><img src="/img/humc_logo.jpg" alt="" /></a>
+					<a href="http://" target="_blank"><img src="/img/humcpv_logo.png" alt="" /></a>
+					<a href="http://" target="_blank"><img src="/img/hcsc_logo.png" alt="" /></a>
 				</div>
-				<div class="footer white">
+			</div>
+			<div class="wrap grey">
+				<div class="footer inner clearfix">
 					<div class="bucket1">
 						<div class="flogo">
 							<a href="{site_url}">CSC - Comprehensive Spine Care, P.A.</a>
@@ -98,14 +104,18 @@
 						<h4>Mailing Address</h4>
 						<p>P.O. Box 631<br />
 						Westwood, NJ  07675</p>
+						<div class="social clearfix">
+							<a href=""><img src="/img/icon_tw.png" alt="" /></a>
+							<a href=""><img src="/img/icon_fb.png" alt="" /></a>
+						</div>
 					</div>
 					<div class="bucket2">
 						<h4>Emerson Office:</h4>
 						<p>466 Old Hook Road<br />
 						Suite 16<br />
-						Emerson, NJ  07630<p>
+						Emerson, NJ  07630</p>
 						 
-						<p><span class="blueletter">T</span> 201 634 1811</p>
+						<p><span class="blueletter">T</span> <strong>201 634 1811</strong></p>
 					</div>
 					<div class="bucket3">
 						<h4>Clifton Office:</h4>
@@ -113,7 +123,7 @@
 						Suite 200<br />
 						Clifton, NJ  07013</p>
 						 
-						<p><span class="blueletter">T</span> 201 634 1811</p>
+						<p><span class="blueletter">T</span> <strong>201 634 1811</strong></p>
 					</div>
 					<div class="bucket4">
 						<ul class="footernav">
@@ -128,21 +138,19 @@
 				</div>
 			</div>
 		</footer>
-         
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+</body>
 </html>

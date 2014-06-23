@@ -22,7 +22,9 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-
+body {
+	font-family: 'Open Sans', Hellvetica, Arial, sans-serif;
+}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -102,8 +104,8 @@ textarea {
 .inner {
 	margin: 0 auto;
 	max-width: 58.8rem;
-	width: 100%;
-	
+	width: 93%;
+	padding: 0 10px;
 }
 .wrap {
 	width: 100%;
@@ -157,6 +159,13 @@ p {
 	line-height: 23px;
 	text-decoration: none;
 }
+.logo-bar {
+	padding-top: 19px;
+	padding-bottom: 5px;
+}
+.logo {
+	margin-left: 10px;
+}
 .logo a {
 	float: left;
 	background: url(../img/logo.png) no-repeat;
@@ -168,7 +177,8 @@ p {
 	float: right;
 }
 #nav {
-	
+	padding: 16px 0 22px 0;
+	margin: 0 0 0 0;
 }
 #nav li {
 	list-style: none;
@@ -177,30 +187,173 @@ p {
 #nav li a {
 	float: left;
 	border-top: 6px solid #a2def9;
-
-	width: 100%;
+	width: 89%;
+	color: #3d4e5b;
+	font-size: 13px;
+	text-decoration: none;
+	font-weight: 700;
+	padding-left: 12px;
+	padding-top: 10px;
+	line-height: 16px;
+}
+#nav li a:hover, #nav li.sticky {
+	border-color: #3c4e5c;
+}
+.subnav {
+	display: block;
+	font-weight: normal;
 }
 #nhome {
-	width: 178px;
+	width: 18.936%;
 	margin-right: 1px;
 }
+#naboutp, #nabout, #nconditions, #ntreatments, #ncontact {
+	width: 12.127%;
+	margin-right: 1px;
+}
+#nsearch {
+	width: 18.936%;
+}
+#nav #nhome a, #nav #nsearch a {
+	width: 93%;
+} 
 /* @end */
 
 /* @group Home Page */
-
+.callouts .inner {
+	padding: 51px 0;
+}
+.callouts-wrap {
+	width: 87.23%;
+	margin: 0 auto;
+}
 .callout-panel {
-	width: 27%;
+	width: 29%;
 	float: left;
 	padding: 0 2.11111%;
 }
-.subtitle {
-	
+.callout-panel h2 {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	text-decoration: none;
+	font-size: 32px;
+	line-height: 41px;
+	margin-top: 18px;
+	margin-bottom: 10px;
 }
-
+.subtitle {
+	font-family: 'Klinic Slab', Georgia, serif;
+	font-size: 43px;
+	font-weight: lighter;
+}
+.callout-panel a {
+	text-decoration: none;
+	color: #3c4e5c;
+}
+.callout-panel p {
+	padding: 14px 34px 0;
+	background: url(/img/border.png) no-repeat top center;
+	margin-top: 0;
+}
+.slider {
+	text-align: center;
+	padding-top: 54px;
+	padding-bottom: 22px;
+}
+.slider-text h2 {
+	margin-top: 0;
+	color: #fff;
+	font-size: 36px;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Klinic Slab', Georgia, serif;
+	font-weight: lighter;
+	padding: 5px 164px;
+	line-height: 43px;
+}
 /* @end */
 
+/* @group footer */
 
-
+.logo-bar-footer {
+	border-top: 1px solid #346fa2;
+	padding-top: 33px;
+	padding-bottom: 40px;
+}
+.logo-bar-footer a {
+	padding: 0 6px;
+}
+.bucket1 {
+	float: left;
+	padding: 55px 0;
+	width: 25.532%;
+	margin-right: 3.191%;
+}
+.flogo a {
+	background: url(/img/flogo.png) no-repeat;
+	display: block;
+	width: 148px;
+	height: 64px;
+	text-indent: -999999em;
+}
+.bucket1 p, .bucket1 h4 {
+	margin-left: 34px;
+}
+.bucket2 {
+	width: 23.404%;
+	float: left;
+	padding-top: 70px;
+}
+.bucket3 {
+	width: 20%;
+	float: left;
+	margin-top: 70px;
+	margin-right: 6.593%;
+	background: url(/img/borderV.png) no-repeat right center;
+}
+.bucket4 {
+	float: left;
+	padding-top: 73px;
+	width: 21.28%
+	
+}
+.bucket4 ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.bucket4 ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #3d4e5b;
+	font-weight: 300;
+	
+}
+footer p {
+	margin-top: 0;
+	font-size: 13px;
+	font-family: 'Open Sans';
+	line-height: 18px;
+}
+footer h4 {
+	color: #3d4e5b;
+	font-size: 15px;
+	font-family: 'Klinic Slab';
+	margin-bottom: 0;
+	line-height: 9px;
+	margin-top: 25px;
+}
+.blueletter {
+	color: #a2c6e6;
+	margin-right: 10px;
+}
+.social {
+	margin-left: 34px;
+	margin-top: 17px;
+}
+.social a {
+	margin-right: 10px;
+}
+/* @end */
 
 /* ==========================================================================
    Helper classes
@@ -312,7 +465,20 @@ p {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
-
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+/* Styles */
+.slider-text h2 {
+	padding: 5px 0;
+}
+.callout-panel {
+	width: 100%;
+	float: none;
+	padding: 0;
+	margin-bottom: 10px;
+}
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
