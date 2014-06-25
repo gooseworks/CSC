@@ -115,7 +115,7 @@ textarea {
 	background: #dceffe;
 }
 .dblue {
-	background: #438aca;
+	background: #438aca url(/img/site_bg.png) no-repeat 25% top;
 }
 .grey {
 	background: #f6f6f6;
@@ -136,12 +136,21 @@ textarea {
 /* @end */
 
 /* @group Typography */
-
+h1 {
+	font-family: Klinic Slab, Georgia, serif;
+	font-size: 36px;
+	font-weight: 100;
+	margin-top: 0;
+	padding-top: 46px;
+	letter-spacing: 0.03em;
+	margin-bottom: 0;
+}
 p {
 	font-family: 'Klinic Slab', 'Times New Roman', Georgia, serif;
 	color: #212223;
 	font-size: 18px;
 	line-height: 22px;
+	margin-bottom: 20px;
 }
 
 /* @end */
@@ -355,6 +364,45 @@ footer h4 {
 }
 /* @end */
 
+/* @group About */
+
+.about-top {
+	max-width: 650px;
+	height: 100%;
+	padding-left: 12.766%;
+	color: #fff;
+	padding-bottom: 35px;
+}
+.about-top p {
+	color: #fff;
+	margin-top: 8px;
+	font-size: 22px;
+	font-weight: 100;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+}
+.about-wrap {
+	padding-top: 68px;
+	padding-left: 6.363%;
+	padding-bottom: 80px;
+	
+}
+.about-left {
+	float: left;
+	width: 31.487%;
+	margin-right: 8.511%;
+}
+.about-right {
+	float: right;
+	width: 59.219%;
+	margin-top: -21px;
+}
+.caption {
+	font-size: 12px;
+	margin-top: 10px;
+	font-style: italic;
+}
+/* @end */
 /* ==========================================================================
    Helper classes
    ========================================================================== */
