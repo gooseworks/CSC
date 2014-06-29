@@ -132,7 +132,12 @@ textarea {
 	margin-right: 0;
 	padding-right: 0;
 }
-
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
 /* @end */
 
 /* @group Typography */
@@ -403,6 +408,9 @@ footer h4 {
 	font-style: italic;
 }
 /* @end */
+
+/* @group Doctors */
+
 .doctors-main .wrap {
 	padding-bottom: 55px;
 }
@@ -448,6 +456,42 @@ footer h4 {
 	padding: 0 70px;
 	line-height: 12px;
 	margin-top: 0;
+}
+
+/* @end */
+.bio-left {
+	width: 29.787%;
+	float: left;
+	padding: 118px 8.511% 0 6.383%;
+}
+.bio-right {
+	width: 55.319%;
+	float: left;
+}
+.bio-main .wrap {
+	border-top: 1px solid #438aca;
+	padding-bottom: 85px;
+}
+.bio-right h1 {
+	line-height: 36px;
+}
+.bio-right h2 {
+	color: #00aeef;
+	font-size: 18px;
+	font-weight: 100;
+	margin: 0;
+	line-height: 18px;
+}
+.back {
+	background: url(/img/border_end.png)repeat-x left top;
+	padding-bottom: 10px;
+}
+.back a {
+	color: #3d4e5b;
+	font-weight: bold;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	font-size: 13px;
 }
 /* ==========================================================================
    Helper classes
