@@ -366,14 +366,14 @@ footer h4 {
 
 /* @group About */
 
-.about-top {
+.text-top {
 	max-width: 650px;
 	height: 100%;
 	padding-left: 12.766%;
 	color: #fff;
 	padding-bottom: 35px;
 }
-.about-top p {
+.text-top p {
 	color: #fff;
 	margin-top: 8px;
 	font-size: 22px;
@@ -403,6 +403,52 @@ footer h4 {
 	font-style: italic;
 }
 /* @end */
+.doctors-main .wrap {
+	padding-bottom: 55px;
+}
+.doctors-wrap {
+	width: 74.468%;
+	margin: -124px auto 0;
+}
+.half-box {
+	width: 50%;
+	float: left;
+	position: relative;
+}
+.box-content {
+	background: rgba(10,40,64,.82);
+	position: absolute;
+	top: 50%;
+	height: 90px;
+	color: #fff;
+	text-align: center;
+	/*display: table;*/
+	margin-top: -45px;
+}
+.doctors-intro .wrap {
+	padding-bottom: 120px;
+}
+.box-content-inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+.box-content h3 {
+	font-family: 'Klinic Slab';
+	font-weight: 100;
+	-webkit-font-smoothing: antialiased;
+	font-size: 24px;
+	margin: 0;
+	padding-top: 13px;
+	width: 100%;
+}
+.box-content p {
+	color: #fff;
+	font-size: 10px;
+	font-family: 'Open Sans';
+	padding: 0 70px;
+	line-height: 12px;
+	margin-top: 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
