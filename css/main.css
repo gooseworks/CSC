@@ -423,6 +423,7 @@ footer h4 {
 	float: left;
 	position: relative;
 }
+
 .box-content {
 	background: rgba(10,40,64,.82);
 	position: absolute;
@@ -430,8 +431,34 @@ footer h4 {
 	height: 90px;
 	color: #fff;
 	text-align: center;
-	/*display: table;*/
+	display: table;
 	margin-top: -45px;
+	width: 100%;
+}
+.half-box a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.half-box a:hover {
+	background: rgba(10,40,64,.82);
+	-webkit-transition: all 1s ease;
+	  -moz-transition: all 1s ease;
+	  -ms-transition: all 1s ease;
+	  -o-transition: all 1s ease;
+	  transition: all 1s ease;
+}
+.half-box a:hover .box-content {
+	background: none;
+	-webkit-transition: all 1s ease;
+	  -moz-transition: all 1s ease;
+	  -ms-transition: all 1s ease;
+	  -o-transition: all 1s ease;
+	  transition: all 1s ease;
 }
 .doctors-intro .wrap {
 	padding-bottom: 120px;
@@ -457,8 +484,19 @@ footer h4 {
 	line-height: 12px;
 	margin-top: 0;
 }
-
+.box-content h2 {
+	font-family: 'Klinic Slab';
+	font-weight: 100;
+	-webkit-font-smoothing: antialiased;
+	font-size: 36px;
+	margin: 0 auto;
+	width: 59%;
+	line-height: 36px;
+}
 /* @end */
+
+/* @group Doc Detail */
+
 .bio-left {
 	width: 29.787%;
 	float: left;
@@ -493,6 +531,17 @@ footer h4 {
 	text-decoration: none;
 	font-size: 13px;
 }
+
+/* @end */
+
+/* @group Conditions */
+
+.conditions.box-content {
+	height: 122px;
+	margin-top: -58px;
+}
+
+/* @end */
 /* ==========================================================================
    Helper classes
    ========================================================================== */
