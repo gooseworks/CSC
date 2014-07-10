@@ -141,8 +141,60 @@ textarea {
 /* @end */
 
 /* @group Typography */
+@font-face {
+    font-family: 'klinic_slablight';
+    src: url('/fonts/klinicslablight-webfont.eot');
+    src: url('/fonts/klinicslablight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/klinicslablight-webfont.woff') format('woff'),
+         url('/fonts/klinicslablight-webfont.ttf') format('truetype'),
+         url('/fonts/klinicslablight-webfont.svg#klinic_slablight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'klinic_slabmedium';
+    src: url('/fonts/klinicslabmedium-webfont.eot');
+    src: url('/fonts/klinicslabmedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/klinicslabmedium-webfont.woff') format('woff'),
+         url('/fonts/klinicslabmedium-webfont.ttf') format('truetype'),
+         url('/fonts/klinicslabmedium-webfont.svg#klinic_slabmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'klinic_slabbook';
+    src: url('/fonts/klinicslabbook-webfont.eot');
+    src: url('/fonts/klinicslabbook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/klinicslabbook-webfont.woff') format('woff'),
+         url('/fonts/klinicslabbook-webfont.ttf') format('truetype'),
+         url('/fonts/klinicslabbook-webfont.svg#klinic_slabbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'klinic_slabbold';
+    src: url('/fonts/klinicslabbold-webfont.eot');
+    src: url('/fonts/klinicslabbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/klinicslabbold-webfont.woff') format('woff'),
+         url('/fonts/klinicslabbold-webfont.ttf') format('truetype'),
+         url('/fonts/klinicslabbold-webfont.svg#klinic_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 h1 {
-	font-family: Klinic Slab, Georgia, serif;
+	font-family: klinic_slablight, 'Times New Roman', Georgia, serif;
 	font-size: 36px;
 	font-weight: 100;
 	margin-top: 0;
@@ -151,7 +203,7 @@ h1 {
 	margin-bottom: 0;
 }
 p {
-	font-family: 'Klinic Slab', 'Times New Roman', Georgia, serif;
+	font-family: klinic_slabbook, 'Times New Roman', Georgia, serif;
 	color: #212223;
 	font-size: 18px;
 	line-height: 22px;
@@ -196,7 +248,8 @@ p {
 }
 #nav li {
 	list-style: none;
-	float: left;	
+	float: left;
+	font-family: 'Open Sans';
 }
 #nav li a {
 	float: left;
@@ -256,9 +309,9 @@ p {
 	margin-bottom: 10px;
 }
 .subtitle {
-	font-family: 'Klinic Slab', Georgia, serif;
+	font-family: klinic_slablight, 'Times New Roman', Georgia, serif;
 	font-size: 43px;
-	font-weight: lighter;
+	font-weight: 100;
 }
 .callout-panel a {
 	text-decoration: none;
@@ -279,7 +332,7 @@ p {
 	color: #fff;
 	font-size: 36px;
 	-webkit-font-smoothing: antialiased;
-	font-family: 'Klinic Slab', Georgia, serif;
+	font-family: klinic_slablight, 'Times New Roman', Georgia, serif;
 	font-weight: lighter;
 	padding: 5px 164px;
 	line-height: 43px;
@@ -354,7 +407,7 @@ footer p {
 footer h4 {
 	color: #3d4e5b;
 	font-size: 15px;
-	font-family: 'Klinic Slab';
+	font-family: klinic_slabbold, 'Times New Roman', Georgia, serif;
 	margin-bottom: 0;
 	line-height: 9px;
 	margin-top: 25px;
@@ -388,6 +441,7 @@ footer h4 {
 	font-weight: 100;
 	line-height: 24px;
 	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
 }
 .about-wrap {
 	padding-top: 68px;
@@ -471,7 +525,7 @@ footer h4 {
 	vertical-align: middle;
 }
 .box-content h3 {
-	font-family: 'Klinic Slab';
+	font-family: klinic_slablight, 'Times New Roman', Georgia, serif;
 	font-weight: 100;
 	-webkit-font-smoothing: antialiased;
 	font-size: 24px;
@@ -488,7 +542,7 @@ footer h4 {
 	margin-top: 0;
 }
 .box-content h2 {
-	font-family: 'Klinic Slab';
+	font-family: klinic_slablight, 'Times New Roman', Georgia, serif;
 	font-weight: 100;
 	-webkit-font-smoothing: antialiased;
 	font-size: 30px;
@@ -600,7 +654,7 @@ ul {
 }
 li {
 	list-style-type: square;
-	font-family: 'Klinic Slab';
+	font-family: klinic_slabbook, 'Times New Roman', Georgia, serif;
 	font-size: 18px;
 	margin-bottom: 4px;
 }
@@ -636,7 +690,7 @@ li {
 blockquote {
 	color: #f0a70b;
 	text-align: center;
-	font-family: 'Klinic Slab';
+	font-family: klinic_slabbook, 'Times New Roman', Georgia, serif;
 	font-style: italic;
 	font-size: 28px;
 	margin: 0;
@@ -711,8 +765,8 @@ blockquote {
 }
 .contact-form button {
 	margin-top: 15px;
-	font-family: 'Klinic Slab';
-	font-weight: bold;
+	font-family: klinic_slabbold, 'Times New Roman', Georgia, serif;
+	font-weight: normal;
 	color: #666666;
 	width: 155px;
 	height: 50px;
@@ -751,7 +805,7 @@ blockquote {
 }
 .address-column h4 {
 	font-size: 15px;
-	font-family: 'Klinic Slab';
+	font-family: klinic_slabboldt, 'Times New Roman', Georgia, serif;
 	color: #3d4e5b;
 	margin-top: 28px;
 	margin-bottom: -4px;
@@ -764,6 +818,10 @@ blockquote {
 	margin-top: 0;
 }
 /* @end */
+
+.mobile {
+	display: none;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -879,6 +937,78 @@ blockquote {
 and (min-width : 320px) 
 and (max-width : 480px) {
 /* Styles */
+
+/* @group Header */
+
+.mobile  {
+	display: block !important;
+}
+.non-mobile {
+	display: none;
+}
+.prenav {
+	display: none;
+}
+.logo a {
+	float: left;
+	width: 150px;
+	background-size: contain;
+}
+
+.contact-detes {
+	width: 36%;
+	float: right;
+	margin-top: 21px;
+}
+.contact-detes p {
+	margin-bottom: 0;
+	text-align: left;
+	margin-top: 0;
+	font-size: 15px;
+	line-height: 18px;
+}
+#nav li {
+	width: 43%;
+	text-align: left;
+	margin-left: 4%;
+	float: left;
+	margin-bottom: 13px;
+}
+#nav #nsearch a, #nav li a  {
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 13px;
+	padding-left: 0;
+	border: none;
+}
+#nav #nhome {
+	display: none;
+}
+.nav-toggle {
+	background: #3c4e5c url("/img/hamburger.gif") no-repeat 92% 50%;
+	padding: 18px 13px;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin-left: -14px;
+	width: 100%;
+	display: block;
+}
+.mobile.nav {
+	border-bottom: 1px solid #438aca;
+}
+.col-4 {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.last {
+	text-align: center;
+}
+.prenav {
+	height: auto;
+}
+/* @end */
+
 .slider-text h2 {
 	padding: 5px 0;
 }
@@ -887,6 +1017,91 @@ and (max-width : 480px) {
 	float: none;
 	padding: 0;
 	margin-bottom: 10px;
+}
+
+/* @group About */
+
+.text-top {
+	padding-left: 2.766%;
+}
+.about-wrap {
+	padding-left: 0;
+	padding-bottom: 40px;
+}
+.about-left {
+	width: 80%;
+	text-align: center;
+	float: none;
+	margin: 0 auto;
+}
+.about-right {
+	float: none;
+	width: 80%;
+	margin: 0 auto;
+}
+/* @end */
+
+/* @group footer */
+
+footer .bucket1 h4 {
+	margin-left: 0;
+}
+footer .bucket1 p {
+	margin-left: 0;
+	margin-bottom: 8px;
+}
+.social {
+	margin-left: 0;
+	margin-top: 5px;
+}
+.flogo {
+	float: left;
+	width: 48%;
+	margin-top: 23px;
+	margin-right: 2%;
+}
+.flogo a {
+	width: 130px;
+	background-size: contain;
+}
+.mailing {
+	width: 50%;
+	float: left;
+}
+.bucket1 {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 9px;
+	float: none;
+}
+.bucket2 {
+	float: left;
+	width: 50%;
+	padding-top: 0;
+}
+.bucket3 {
+	margin-right: 0;
+	margin-top: 0;
+	width: 50%;
+	background: none;
+}
+.bucket4 {
+	display: none;
+}
+.logo-bar-footer {
+	padding-top: 5px;
+	padding-bottom: 30px;
+}
+.logo-bar-footer a {
+	padding: 0 13px;
+	width: 38%;
+	float: left;
+	text-align: center;
+}
+.logo-bar-footer img {
+	max-width: 100%;
+}
+/* @end */
 }
 @media print,
        (-o-min-device-pixel-ratio: 5/4),

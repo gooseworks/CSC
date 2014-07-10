@@ -14,6 +14,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>        
 		<link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/responsive-nav.css">
         <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -30,28 +31,60 @@
         		<div class="col-4 last"><a href="{path='login'}">Nurse Login</a></div>
          	</div>
          </div>
-         	<div class="wrap nav grey">
-         		<div class="inner">
-         			<div class="logo-bar clearfix">
-         				<div class="logo">
-         					<a href="{site_url}">CSC - Comprehensive Spine Care, P.A.</a>
-         				</div>
-         				<div class="contact-detes">
-         					<p><span class="blueletter">T</span> 201 634 1811</p>
-         					<p><span class="blueletter">F</span> 201 634 9170</p>
-         				</div>
-         			</div>
-         			<ul id=nav class="clearfix">
-         				<li id="nhome"{if segment_1 == ''} class="sticky" {/if}><a href="{site_url}">Home</a></li>
-         				<li id="naboutp"{if segment_1 == 'about'} class="sticky" {/if}><a href="{path='about'}">About <span class="subnav">The Practice</span></a></li>
-         				<li id="nabout"{if segment_1 == 'doctors'} class="sticky" {/if}><a href="{path='doctors'}">About <span class="subnav">The Doctors</span></a></li>
-         				<li id="nconditions"{if segment_1 == 'conditions'} class="sticky" {/if}><a href="{path='conditions'}">Conditions</a></li>
-         				<li id="ntreatments"{if segment_1 == 'treatments'} class="sticky" {/if}><a href="{path='treatments'}">Treatments</a></li>
-         				<li id="ncontact"{if segment_1 == 'contact'} class="sticky" {/if}><a href="{path='contact'}">Contact</a></li>
-         				<li id="nsearch"{if segment_1 == 'search'} class="sticky" {/if}><a href="{path='search'}">Search</a></li>
-         			</ul>
-         		</div>
-         	</div>
+     	<div class="wrap nav grey non-mobile">
+     		<div class="inner">
+     			<div class="logo-bar clearfix">
+     				<div class="logo">
+     					<a href="{site_url}">CSC - Comprehensive Spine Care, P.A.</a>
+     				</div>
+     				<div class="contact-detes">
+     					<p><span class="blueletter">T</span> 201 634 1811</p>
+     					<p><span class="blueletter">F</span> 201 634 9170</p>
+     				</div>
+     			</div>
+     			<ul id="nav" class="clearfix">
+     				<li id="nhome"{if segment_1 == ''} class="sticky" {/if}><a href="{site_url}">Home</a></li>
+     				<li id="naboutp"{if segment_1 == 'about'} class="sticky" {/if}><a href="{path='about'}">About <span class="subnav">The Practice</span></a></li>
+     				<li id="nabout"{if segment_1 == 'doctors'} class="sticky" {/if}><a href="{path='doctors'}">About <span class="subnav">The Doctors</span></a></li>
+     				<li id="nconditions"{if segment_1 == 'conditions'} class="sticky" {/if}><a href="{path='conditions'}">Conditions</a></li>
+     				<li id="ntreatments"{if segment_1 == 'treatments'} class="sticky" {/if}><a href="{path='treatments'}">Treatments</a></li>
+     				<li id="ncontact"{if segment_1 == 'contact'} class="sticky" {/if}><a href="{path='contact'}">Contact</a></li>
+     				<li id="nsearch"{if segment_1 == 'search'} class="sticky" {/if}><a href="{path='search'}">Search</a></li>
+     				
+     			</ul>
+     		</div>
+     	</div>
+     	<div class="wrap nav grey mobile">
+     		<div class="inner">
+     			
+     			<ul id="nav" class="clearfix nav-collapse">
+     				<li id="nhome"{if segment_1 == ''} class="sticky" {/if}><a href="{site_url}">Home</a></li>
+     				<li id="naboutp"{if segment_1 == 'about'} class="sticky" {/if}><a href="{path='about'}">About <span class="subnav">The Practice</span></a></li>
+     				<li id="nabout"{if segment_1 == 'doctors'} class="sticky" {/if}><a href="{path='doctors'}">About <span class="subnav">The Doctors</span></a></li>
+     				<li id="nconditions"{if segment_1 == 'conditions'} class="sticky" {/if}><a href="{path='conditions'}">Conditions</a></li>
+     				<li id="ntreatments"{if segment_1 == 'treatments'} class="sticky" {/if}><a href="{path='treatments'}">Treatments</a></li>
+     				<li id="ncontact"{if segment_1 == 'contact'} class="sticky" {/if}><a href="{path='contact'}">Contact</a></li>
+     				<li id="nsearch"{if segment_1 == 'search'} class="sticky" {/if}><a href="{path='search'}">Search</a></li>
+     				<li><a href="{path='health-insurance'}">Health Insurance</a></li>
+     				<li><a href="{path='workers-compensation'}">Workers Compensation</a></li>
+     				<li><a href="{path='forms'}">Patient Forms</a></li>
+     				<li><a href="{path='login'}">Nurse Login</a></li>
+     			</ul>
+     		</div>
+     	</div>
+     	<div class="wrap grey mobile">
+     		<div class="inner">
+     			<div class="logo-bar clearfix">
+     				<div class="logo">
+     					<a href="{site_url}">CSC - Comprehensive Spine Care, P.A.</a>
+     				</div>
+     				<div class="contact-detes">
+     					<p><span class="blueletter">T</span> 201 634 1811</p>
+     					<p><span class="blueletter">F</span> 201 634 9170</p>
+     				</div>
+     			</div>
+     		</div>
+     	</div>
          </header>
 		<section class="about-main">
 			<div class="wrap dblue">
@@ -95,33 +128,37 @@
 			</div>
 			<div class="wrap grey">
 				<div class="footer inner clearfix">
-					<div class="bucket1">
+					<div class="bucket1 clearfix">
 						<div class="flogo">
 							<a href="{site_url}">CSC - Comprehensive Spine Care, P.A.</a>
 						</div>
-						<h4>Mailing Address</h4>
-						<p>P.O. Box 631<br />
-						Westwood, NJ  07675</p>
-						<div class="social clearfix">
-							<a href=""><img src="/img/icon_tw.png" alt="" /></a>
-							<a href=""><img src="/img/icon_fb.png" alt="" /></a>
+						<div class="mailing">
+							<h4>Mailing Address</h4>
+							<p>P.O. Box 631<br />
+							Westwood, NJ  07675</p>
+							<div class="social clearfix">
+								<a href=""><img src="/img/icon_tw.png" alt="" /></a>
+								<a href=""><img src="/img/icon_fb.png" alt="" /></a>
+							</div>
 						</div>
 					</div>
-					<div class="bucket2">
-						<h4>Emerson Office:</h4>
-						<p>466 Old Hook Road<br />
-						Suite 16<br />
-						Emerson, NJ  07630</p>
-						 
-						<p><span class="blueletter">T</span> <strong>201 634 1811</strong></p>
-					</div>
-					<div class="bucket3">
-						<h4>Clifton Office:</h4>
-						<p>925 Clifton Ave<br />
-						Suite 200<br />
-						Clifton, NJ  07013</p>
-						 
-						<p><span class="blueletter">T</span> <strong>201 634 1811</strong></p>
+					<div class="mobile-wrap">
+						<div class="bucket2">
+							<h4>Emerson Office:</h4>
+							<p>466 Old Hook Road<br />
+							Suite 16<br />
+							Emerson, NJ  07630</p>
+							 
+							<p><span class="blueletter">T</span> <strong>201 634 1811</strong></p>
+						</div>
+						<div class="bucket3">
+							<h4>Clifton Office:</h4>
+							<p>925 Clifton Ave<br />
+							Suite 200<br />
+							Clifton, NJ  07013</p>
+							 
+							<p><span class="blueletter">T</span> <strong>201 634 1811</strong></p>
+						</div>
 					</div>
 					<div class="bucket4">
 						<ul class="footernav">
@@ -136,11 +173,16 @@
 				</div>
 			</div>
 		</footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/main.js"></script>
 
+
+<script src="/js/responsive-nav.min.js"></script>
+<script>
+  var nav = responsiveNav(".nav-collapse");
+</script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
