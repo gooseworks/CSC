@@ -1,0 +1,79 @@
+ <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>        
+		<link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/responsive-nav.css">
+        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="wrap prenav">
+        	<div class="inner clearfix">
+        		<div class="col-4"><a href="{path='health-insurance'}">Health Insurance</a></div>
+        		<div class="col-4 centered-text"><a href="{path='workers-compensation'}">Workers Compensation</a></div>
+        		<div class="col-4 last"><a href="{path='forms'}">Patient Forms</a></div>
+        		<div class="col-4 last"><a href="{path='login'}">Nurse Login</a></div>
+         	</div>
+         </div>
+     	<div class="wrap nav grey non-mobile">
+     		<div class="inner">
+     			<div class="logo-bar clearfix">
+     				<div class="logo">
+     					<a href="{site_url}">CSC - Comprehensive Spine Care, P.A.</a>
+     				</div>
+     				<div class="contact-detes">
+     					<p><span class="blueletter">T</span> 201 634 1811</p>
+     					<p><span class="blueletter">F</span> 201 634 9170</p>
+     				</div>
+     			</div>
+     			<ul id="nav" class="clearfix">
+     				<li id="nhome"{if segment_1 == ''} class="sticky" {/if}><a href="{site_url}">Home</a></li>
+     				<li id="naboutp"{if segment_1 == 'about'} class="sticky" {/if}><a href="{path='about'}">About <span class="subnav">The Practice</span></a></li>
+     				<li id="nabout"{if segment_1 == 'doctors'} class="sticky" {/if}><a href="{path='doctors'}">About <span class="subnav">The Doctors</span></a></li>
+     				<li id="nconditions"{if segment_1 == 'conditions'} class="sticky" {/if}><a href="{path='conditions'}">Conditions</a></li>
+     				<li id="ntreatments"{if segment_1 == 'treatments'} class="sticky" {/if}><a href="{path='treatments'}">Treatments</a></li>
+     				<li id="ncontact"{if segment_1 == 'contact'} class="sticky" {/if}><a href="{path='contact'}">Contact</a></li>
+     				<li id="nsearch"{if segment_1 == 'search'} class="sticky" {/if}><a href="{path='search'}">Search</a></li>
+     				
+     			</ul>
+     		</div>
+     	</div>
+     	<div class="wrap nav grey mobile">
+     		<div class="inner">
+     			
+     			<ul id="nav" class="clearfix nav-collapse">
+     				<li id="nhome"{if segment_1 == ''} class="sticky" {/if}><a href="{site_url}">Home</a></li>
+     				<li id="naboutp"{if segment_1 == 'about'} class="sticky" {/if}><a href="{path='about'}">About <span class="subnav">The Practice</span></a></li>
+     				<li id="nabout"{if segment_1 == 'doctors'} class="sticky" {/if}><a href="{path='doctors'}">About <span class="subnav">The Doctors</span></a></li>
+     				<li id="nconditions"{if segment_1 == 'conditions'} class="sticky" {/if}><a href="{path='conditions'}">Conditions</a></li>
+     				<li id="ntreatments"{if segment_1 == 'treatments'} class="sticky" {/if}><a href="{path='treatments'}">Treatments</a></li>
+     				<li id="ncontact"{if segment_1 == 'contact'} class="sticky" {/if}><a href="{path='contact'}">Contact</a></li>
+     				<li id="nsearch"{if segment_1 == 'search'} class="sticky" {/if}><a href="{path='search'}">Search</a></li>
+     				<li><a href="{path='health-insurance'}">Health Insurance</a></li>
+     				<li><a href="{path='workers-compensation'}">Workers Compensation</a></li>
+     				<li><a href="{path='forms'}">Patient Forms</a></li>
+     				<li><a href="{path='login'}">Nurse Login</a></li>
+     			</ul>
+     		</div>
+     	</div>
+     	<div class="wrap grey mobile">
+     		<div class="inner">
+     			<div class="logo-bar clearfix">
+     				<div class="logo">
+     					<a href="{site_url}">CSC - Comprehensive Spine Care, P.A.</a>
+     				</div>
+     				<div class="contact-detes">
+     					<p><span class="blueletter">T</span> 201 634 1811</p>
+     					<p><span class="blueletter">F</span> 201 634 9170</p>
+     				</div>
+     			</div>
+     		</div>
+     	</div>
+         </header>

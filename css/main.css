@@ -263,7 +263,7 @@ p {
 	padding-top: 10px;
 	line-height: 16px;
 }
-#nav li a:hover, #nav li.sticky {
+#nav li a:hover, #nav li.sticky a {
 	border-color: #3c4e5c;
 }
 .subnav {
@@ -754,13 +754,14 @@ blockquote {
 	height: 32px;
 	text-indent: 8px;
 	margin-bottom: 14px;
+	padding: 0;
 }
 .contact-form textarea {
 	width: 100%;
 	border: 1px solid #d0d0d0;
 	height: 113px;
 	text-indent: 7px;
-	padding-top: 10px;
+	padding: 10px 0 0 0;
 	font-weight: lighter;
 }
 .contact-form button {
@@ -817,11 +818,25 @@ blockquote {
 	line-height: 16px;
 	margin-top: 0;
 }
+.google-maps {
+    position: relative;
+    padding-bottom: 59.36%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
 /* @end */
 
 .mobile {
 	display: none;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1018,6 +1033,30 @@ and (max-width : 480px) {
 	padding: 0;
 	margin-bottom: 10px;
 }
+.half-box {
+	width: 100%;
+	float: none;
+	
+}
+.box-content p {
+	padding: 0 45px;
+}
+.doctors-wrap {
+	width: 87.468%;
+}
+.box-content h2 {
+	width: 100%;
+}
+.contact-form {
+	width: 100%;
+	margin-left: 0;
+}
+.address-column {
+	width: 44%;
+}
+.contact .inner {
+padding-bottom: 31px;
+} 
 
 /* @group About */
 
@@ -1101,8 +1140,21 @@ footer .bucket1 p {
 .logo-bar-footer img {
 	max-width: 100%;
 }
+
 /* @end */
+.bio-left {
+	width: 100%;
+	padding: 30px 10px;
 }
+.bio-right {
+	width: 100%;
+	float: none;
+}
+.bio-main .wrap {
+	padding-bottom: 30px;
+}
+}
+
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),

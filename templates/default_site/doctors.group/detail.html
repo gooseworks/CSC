@@ -1,0 +1,39 @@
+{embed='global/header1'}
+<title>CSC - Comprehensive Spine Care, P.A.</title>
+{embed='global/header2'}
+{exp:channel:entries
+	channel="bios"
+	disable="categories|category_fields|member_data|pagination|trackbacks"
+	dynamic="yes"
+}
+<section class="bio-main">
+	<div class="wrap grey">
+  		<div class="inner clearfix">
+	  		<div class="bio-left">
+	  			<img src="{b_image}" alt="{title}" width="100%" />
+	  			{if b_caption}<p class="caption">{b_caption}</p>{/if}
+	  			<div class="awards">
+	  				
+	  			</div>
+	  			<div class="social">
+	  				{b_social}
+	  				<a href="{url}" target="_blank"><img src="{if site == 'Google Plus'}/img/icon_gplus.png{if:elseif site == 'Vitals'}/img/icon_vitals.png{/if}" alt="" /></a>
+	  				
+	  				{/b_social}
+	  			</div>
+	  		</div>
+	  		<div class="bio-right">
+		 		<h1>{title}</h1>
+		 		<h2>{b_title}</h2>
+		 		{b_bio}
+		 		</div>
+		 		<div class="clearfix"></div>
+		 		<div class="back">
+		 			<p class="right"><a href="{path='doctors'}">< Back</a>
+		 		</div>
+			</div>
+		</div>
+	</div>
+</section>
+{/exp:channel:entries}
+{embed='global/footer'}

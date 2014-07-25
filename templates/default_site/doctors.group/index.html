@@ -1,0 +1,58 @@
+{embed='global/header1'}
+<title>CSC - Comprehensive Spine Care, P.A.</title>
+{embed='global/header2'}
+<section class="doctors-intro">
+	<div class="wrap dblue">
+		<div class="inner">
+			<div class="text-top">
+          		<h1>Meet Our Team</h1>
+      			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis nisi auctor, elementum elit quis, rhoncus massa.</p>
+      		</div>
+        </div>
+    </div>
+</section>
+<section class="doctors-main">
+	<div class="wrap grey">
+  		<div class="inner clearfix">
+	  		<div class="doctors-wrap">
+	  			{exp:channel:entries
+	  				channel="bios"
+	  				disable="categories|category_fields|member_data|pagination|trackbacks"
+	  				dynamic="yes"
+	  			}
+		 		<div class="half-box">
+		 			<a href="{url_title_path='doctors/detail'}">
+			 			<div class="box-content">
+			 				<h3>{title}</h3>
+			 				<p>{b_title}</p>
+			 			</div>
+		 			</a>
+		 			<img src="/img/team_placeholder.png" alt="" width="100%" />
+		 		</div>
+		 		{/exp:channel:entries}
+		 		<div class="half-box">
+		 			<div class="box-content">
+		 				<h3>Rafael Levin, MD, MSc</h3>
+		 				<p>Board-certified Orthpaedic Surgeon Specializing in Spine Surgery</p>
+		 			</div>
+		 			<img src="/img/team_placeholder.png" alt="" width="100%" />
+		 		</div>
+		 		<div class="half-box">
+		 			<div class="box-content">
+		 				<h3>Nomaan Ashraf, MD, MBA</h3>
+		 				<p>Board-certified Orthpaedic Surgeon Specializing in Spine Surgery</p>
+		 			</div>
+		 			<img src="/img/team_placeholder.png" alt="" width="100%" />
+		 		</div>
+		 		<div class="half-box">
+		 			<div class="box-content">
+		 				<h3>Jonathan Lester, MD </h3>
+		 				<p>Board-certified Physical Medicine & Rehabilitation</p>
+		 			</div>
+		 			<img src="/img/team_placeholder.png" alt="" width="100%" />
+		 		</div>
+			</div>
+		</div>
+	</div>
+</section>
+{embed='global/footer'}
